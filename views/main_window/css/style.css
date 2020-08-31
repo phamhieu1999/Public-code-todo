@@ -1,0 +1,193 @@
+body {
+  background-color: #343a40;
+  overflow: hidden;
+}
+
+*:focus {
+  outline: none;
+}
+
+.y-m-gr {
+  color: #fff;
+}
+
+.y-m-gr .day {
+  font-size: 3.5em;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+#add-work {
+  background-color: #222222;
+  width: 100%;
+  padding: 10px;
+  color: #cecece;
+  font-size: 0.8em;
+}
+
+.fa-plus {
+  color: #fff;
+}
+
+.progress {
+  padding: 0px !important;
+}
+
+.col-10 {
+  padding: 0;
+}
+
+.fa-plus::before {
+  position: relative;
+  right: 32px;
+  cursor: pointer;
+}
+
+.add-new {
+  margin-top: 10px;
+}
+
+.work-list {}
+
+.work-list .item {
+  padding: 10px;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.work-list .item:hover {
+  background-color: #0063ce !important;
+}
+
+.work-list .item i.fa {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.work-display {
+  height: 62vh;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+i#close-btn {
+  position: absolute;
+  color: red;
+  font-size: 1.5em;
+  top: 0;
+  right: 2px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.month {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.year {
+  font-size: 13px;
+}
+
+.day-of-week {
+  color: #e4e4e4;
+  font-size: 13px;
+}
+
+.do-later-list,
+.completed-list {
+  margin-top: 20px;
+}
+
+.do-later-list .title,
+.completed-list .title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+.do-later-list .title i,
+.completed-list .title i {
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+#progress-task {
+  background-color: #000;
+}
+
+.dropdn-menu {
+  
+}
+
+.btn-menu {/* position: absolute; *//* bottom: 0; *//* left: 0; */color: #fff;font-weight: 900;background-color: green;}
+.dropdn-menu:hover .btn-menu {
+  background-color: #bf2130;
+  color: #fff;
+}
+#menu-im-ex-gr {
+  display: none;
+  position: absolute;
+  /* left: 0; */
+  bottom: 60px;
+  box-shadow: 2px 6px 4px 2px rgba(255, 255, 255, 0.1);
+}
+#menu-im-ex-gr ul {
+
+}
+#menu-im-ex-gr li{
+  cursor: pointer;
+}
+#menu-im-ex-gr li:hover{
+  background-color: #007bff;
+}
+
+.dropdn-menu:hover #menu-im-ex-gr{
+  display: block !important;
+}
+.date-picker {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+}
+#menu-im-ex-gr li {
+  color: #000;
+}
+#menu-im-ex-gr .send-mail {
+  pointer-events: none;
+  color: #ccc;
+  /* cursor: not-allowed; */
+}

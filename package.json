@@ -1,0 +1,23 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sqlite3": "^5.0.0"
+  },
+  "dependencies": {
+    "electron": "^9.2.1",
+    "jquery": "^3.5.1",
+    "nodemailer": "^6.4.11"
+  },
+  "mail_acc": {
+    "user": "hieupv@vietis.com.vn",
+    "pass": "phamhieu1999"
+  }
+}

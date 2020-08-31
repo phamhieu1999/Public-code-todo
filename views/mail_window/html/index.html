@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Send mail</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+
+  <!-- font-awesome css -->
+  <link rel="stylesheet" href="../../common/css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <!-- Customer css -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2>DAILY REPORT</h2>
+      <h2 class="sm-timer"></h2>
+    </div>
+    <p>At the end of workday, you need to send report through internal mail system. </p>
+    <div action="#" class="was-validated">
+      <div class="form-group">
+        <input type="email" class="form-control" id="recipient" placeholder="Recipient" name="mail-to" required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject" required>
+      </div>
+      <div class="form-group">
+        <textarea name="" id="mail-content" autofocus></textarea>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <button type="submit" class="btn btn-primary btn-submit-send-mail">Send</button>
+        <!-- Datepicker -->
+        <div class="date-picker">
+          <input id="inp-date-picker" type="date" class="form-control" value="2020-08-26">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script language="JavaScript" type="text/javascript" src="../../../node_modules/jquery/dist/jquery.min.js"
+    onload="window.$ = window.jQuery"></script>
+  <script src="../../common/js/popper.min.js"></script>
+  <script src="../../common/js/bootstrap.min.js"></script>
+
+  <!-- Customer Js -->
+  <script src="../../common/js/date_common.js"></script>
+  <script>
+    $("#inp-date-picker").attr("value", new Date().dbFormat(new Date()))
+  </script>
+  <script src="../js/mail_window.js"></script>
+  <script>
+    setInterval(function () {
+      let d = new Date();
+      let t = d.toLocaleTimeString();
+      $(".sm-timer").text(t);
+    }, 1000)
+  </script>
+
+</body>
+
+</html>
